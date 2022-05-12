@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+  let sotiengui = +prompt('Nhập số tiền gửi ban đầu');
+  let laisuatthang = (+prompt('Nhập lãi suất tháng'))/100;
+  let sothanggui = +prompt('Nhập số tháng gửi');
+  for (let i=1;i<=sothanggui;i++) {
+    sotiengui+=sotiengui*laisuatthang;
+  }
+  document.write('Tổng tiền là '+sotiengui);
+</script>
+</body>
+</html>
